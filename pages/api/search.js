@@ -1,3 +1,5 @@
+console.log("🔍 AMADEUS_API_KEY:", process.env.AMADEUS_API_KEY ? "OK" : "❌ MISSING");
+console.log("🔍 AMADEUS_API_SECRET:", process.env.AMADEUS_API_SECRET ? "OK" : "❌ MISSING");
 // pages/api/search.js
 export default async function handler(req, res) {
   try {
