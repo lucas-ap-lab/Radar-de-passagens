@@ -1,5 +1,5 @@
 // pages/index.js
-import Head from "next/head";
+import AirportInput from "../components/AirportInput.jsx";
 import { useState } from "react";
 
 export default function Home() {
