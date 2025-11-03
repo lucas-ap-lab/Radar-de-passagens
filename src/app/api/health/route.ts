@@ -1,0 +1,13 @@
+import { NextResponse } from "next/server";
+import { getEnv } from "@/lib/env";
+
+export const runtime = "nodejs"; // garante execução no backend
+
+export async function GET() {
+  try {
+    const env = getEnv();
+    return NextResponse.json({ ok: true, have: Object.keys(env) });
+  } catch (e: any) {
+    return NextResponse.json({ ok: false, error: e.message }, { status: 500 });
+  }
+}
