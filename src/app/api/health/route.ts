@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getEnv } from "@/lib/env";
+import { getEnv } from "../../../lib/env";
 
 export const runtime = "nodejs"; // garante execução no backend
 
