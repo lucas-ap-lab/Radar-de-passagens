@@ -1,4 +1,4 @@
-import { getEnv } from "../../lib/env";
+import { getEnv } from "../../src/lib/env.js";
 
 export default function handler(req, res) {
   try {
